@@ -17,6 +17,9 @@ monitorDiv.onclick = function (element) {
         code:
           `var mutation = new MutationObserver( function (mutations) { 
             mutations.forEach(function (mutation) {
+              if (Notification.permission !== 'granted'){
+                Notification.requestPermission();
+              };
               var note = new Notification('Content change detected!')  
               let url = chrome.runtime.getURL('audio/alert.mp3')
               let a = new Audio(url)
