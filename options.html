@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html style="height: 100%; overflow: hidden;">
+
+<head>
+  <style>
+    body {
+      background-color: rgb(54, 54, 60);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    #saveSelector button {
+      width: 100%;
+      margin-top: 10px;
+      outline: none;
+      height: 35px;
+      font-size: 18px;
+      border-radius: 3px;
+      background-color: burlywood;
+      border: none;
+      color: white;
+    }
+
+    #saveSelector button:hover {
+      background-color: rgb(235, 199, 152);
+    }
+
+    #saveSelector button:active {
+      background-color: rgb(209, 169, 117);
+    }
+
+    .container {
+      background-color: #4c4a4f;
+      padding: 2%;
+      box-shadow: 1px 5px 35px -24px;
+      border-radius: 3px;
+    }
+
+    #inputArea input {
+      height: 32px;
+      font-size: 18px;
+      width: 100%;
+      border-width: 0px;
+      border-radius: 3px;
+    }
+
+    .title {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="title" style="margin-top: 0px;">Content Change Detector </h2>
+    <h3 class="title"> Current selector: &nbsp;<span style="color: #86ff25;" id="current"></span></h3>
+    <pre class="title" style="font-size: 12px;">
+<b>How to use:</b>
+
+  1. Use prefix '.' for class selectors.
+     For example: To select <code>&lt;div class="targetname">&lt;/div></code>
+                  <span style="color: #86ff25;">Use <b>.targetname</b></span>    
+  2. Use prefix '#' for id selectors.
+     For example: To select <code>&lt;div id="targetname">&lt;/div></code>
+                  <span style="color: #86ff25;">Use <b>#targetname</b></span>
+
+<b>How to stop monitoring:</b>
+
+  Reload the page to remove the content change monitoring.
+
+<b>Warning:</b>
+
+  Do not initialize monitoring more than once. 
+  Incorrect usage may cause the browser to crash.
+        </pre>
+    <div id="inputArea">
+    </div>
+    <div id="saveSelector">
+    </div>
+  </div>
+  <h4 class="title" style="color: #f4ebeb; font-weight: 600;"> Coded by <a
+      style="color: #86ff25; text-decoration: none;" href="https://github.com/azizstark/"> Aziz Stark </a></h4>
+</body>
+<script src="options.js"></script>
+
+</html>

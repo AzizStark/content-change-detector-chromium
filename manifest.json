@@ -1,0 +1,30 @@
+ {
+    "name": "Change Detector",
+    "version": "0.1.0.1",
+    "description": "Easily detect changes in an element using selectors",
+    "permissions": ["storage", "activeTab", "declarativeContent", "notifications"],
+    "background": {
+      "scripts": ["detector.js"],
+      "persistent": false
+    },
+    "web_accessible_resources": [
+      "audio/alert.mp3"
+    ],
+    "options_page": "options.html",
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/change_detector16.png",
+        "32": "images/change_detector32.png",
+        "48": "images/change_detector48.png",
+        "128": "images/change_detector128.png"
+      }
+    },
+    "icons": {
+      "16": "images/change_detector16.png",
+      "32": "images/change_detector32.png",
+      "48": "images/change_detector48.png",
+      "128": "images/change_detector128.png"
+    },
+    "manifest_version": 2
+  }

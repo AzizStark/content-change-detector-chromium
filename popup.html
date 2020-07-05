@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: rgb(54, 54, 60);
+    }
+
+    button {
+      width: 150px;
+      outline: none;
+      height: 25px;
+      font-size: 14px;
+      border-radius: 3px;
+      background-color: burlywood;
+      border: none;
+      color: white;
+    }
+
+    button:hover {
+      background-color: rgb(235, 199, 152);
+    }
+
+    button:active {
+      background-color: rgb(209, 169, 117);
+    }
+
+    .title {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h4 class="title"> Content Change Detector </h4>
+  <div>
+    <h5 class="title">Current Selector: <span style="color: #86ff25;" id="currentSelector"></span></h5>
+  </div>
+  <button id="monitorClass"> Monitor changes </button>
+  <button id="optionsPage" style="margin-top: 4px;"> Change selector </button>
+  <script src="popup.js"></script>
+</body>
+
+</html>
